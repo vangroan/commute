@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -13,7 +14,9 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/activity_main_view_pager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/activity_main_tab_layout">
 
     </android.support.v4.view.ViewPager>
 
@@ -39,5 +42,17 @@
             tools:text="Right"/>
 
     </android.support.design.widget.TabLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/activity_main_add_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_above="@id/activity_main_tab_layout"
+        android:layout_alignParentEnd="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_input_add"
+         />
+
 
 </RelativeLayout>

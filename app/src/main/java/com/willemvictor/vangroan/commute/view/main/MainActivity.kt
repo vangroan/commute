@@ -11,6 +11,8 @@ import javax.inject.Inject
 
 class MainActivity : CommuteActivity() {
 
+    private lateinit var adapter: MainPagerAdapter
+
     companion object {
         @JvmStatic val TAG: String? = MainActivity::class.simpleName
     }
@@ -23,7 +25,16 @@ class MainActivity : CommuteActivity() {
         setContentView(R.layout.activity_main)
         (application as CommuteApplication).component.inject(this)
 
-        activity_main_view_pager.adapter = MainPagerAdapter(supportFragmentManager)
+        adapter = MainPagerAdapter(supportFragmentManager)
+        activity_main_view_pager.adapter = adapter
         activity_main_tab_layout.setupWithViewPager(activity_main_view_pager)
+
+        activity_main_add_action_button.setOnClickListener {
+            onAddActionClick()
+        }
+    }
+
+    private fun onAddActionClick() {
+        adapter.current?.onAddActionClick()
     }
 }
