@@ -8,4 +8,7 @@ import android.app.Application
 
 class CommuteApplication : Application() {
 
+    override fun onCreate() {
+        super.onCreate()
+    }
 }
