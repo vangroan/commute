@@ -1,15 +1,15 @@
 package com.willemvictor.vangroan.commute.view.main
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import com.willemvictor.vangroan.commute.CommuteApplication
 import com.willemvictor.vangroan.commute.R
 import com.willemvictor.vangroan.commute.preferences.CommutePreferences
+import com.willemvictor.vangroan.commute.view.CommuteActivity
 import com.willemvictor.vangroan.commute.view.main.adapters.MainPagerAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : CommuteActivity() {
 
     companion object {
         @JvmStatic val TAG: String? = MainActivity::class.simpleName
