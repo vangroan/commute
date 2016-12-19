@@ -8,10 +8,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.willemvictor.vangroan.commute.view.MainActivity">
+    tools:context="com.willemvictor.vangroan.commute.view.main.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/activity_main_tab_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentBottom="true">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Left"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Center"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Right"/>
+
+    </android.support.design.widget.TabLayout>
+
 </RelativeLayout>

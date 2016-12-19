@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:name=".CommuteApplication">
-        <activity android:name=".view.MainActivity">
+        <activity android:name=".view.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

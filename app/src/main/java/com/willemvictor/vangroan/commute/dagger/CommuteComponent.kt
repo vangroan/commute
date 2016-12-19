@@ -1,7 +1,7 @@
 package com.willemvictor.vangroan.commute.dagger
 
 import com.willemvictor.vangroan.commute.CommuteApplication
-import com.willemvictor.vangroan.commute.view.MainActivity
+import com.willemvictor.vangroan.commute.view.main.MainActivity
 import dagger.Component
 import javax.inject.Singleton
 
