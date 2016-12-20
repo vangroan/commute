@@ -5,9 +5,5 @@ package com.willemvictor.vangroan.commute.model
  */
 class Trip() {
 
-    var distance: Float = 0f
-
-    constructor(distance: Float) : this() {
-        this.distance = distance
-    }
+    var distance = Distance(0.0, DistanceUnit.M)
 }

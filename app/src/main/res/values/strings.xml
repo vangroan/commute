@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">Commute</string>
 
+    <!-- Distance -->
+    <string name="distance_unit_m_name">Meter</string>
+    <string name="distance_unit_m_symbol">m</string>
+
+    <string name="distance_unit_km_name">Kilometer</string>
+    <string name="distance_unit_km_symbol">km</string>
+
+    <string name="distance_unit_mi_name">Mile</string>
+    <string name="distance_unit_mi_symbol">mi</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
