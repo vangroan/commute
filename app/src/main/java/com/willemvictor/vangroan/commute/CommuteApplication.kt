@@ -16,7 +16,7 @@ class CommuteApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         component = DaggerCommuteComponent.builder()
-                .commuteModule(CommuteModule())
+                .commuteModule(CommuteModule(this))
                 .build()
         component.inject(this)
     }
