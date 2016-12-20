@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.willemvictor.vangroan.commute.R
+import com.willemvictor.vangroan.commute.model.DistanceUnit
 import com.willemvictor.vangroan.commute.model.Trip
 import com.willemvictor.vangroan.commute.view.main.fragments.trip.viewholders.TripViewHolder
 import java.util.*
