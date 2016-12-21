@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import android.view.ViewGroup
 import com.willemvictor.vangroan.commute.view.main.enums.MainPagerPosition
-import com.willemvictor.vangroan.commute.view.main.fragments.trip.MainPageFragment
+import com.willemvictor.vangroan.commute.view.main.fragments.MainPageFragment
 import com.willemvictor.vangroan.commute.view.main.fragments.trip.TripFragment
 
 /**

@@ -1,5 +1,6 @@
 package com.willemvictor.vangroan.commute.view.main.fragments.trip
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
@@ -8,7 +9,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.willemvictor.vangroan.commute.R
+import com.willemvictor.vangroan.commute.view.main.fragments.MainPageFragment
 import com.willemvictor.vangroan.commute.view.main.fragments.trip.adapters.TripAdapter
+import com.willemvictor.vangroan.commute.view.trip.TripActivity
 import kotlinx.android.synthetic.main.fragment_trip.*
 
 class TripFragment : Fragment(), MainPageFragment {
@@ -37,6 +40,8 @@ class TripFragment : Fragment(), MainPageFragment {
 
     override fun onAddActionClick() {
         Log.d(TAG, "Trip Fragment on Add Action Click")
+        val intent = Intent(context, TripActivity::class.java)
+        startActivity(intent)
     }
 
     companion object {
